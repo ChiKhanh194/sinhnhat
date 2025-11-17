@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc mừng sinh nhật Trần Phương Anh</title>
+
+    <!-- Font & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        .birthday-card {
+            max-width: 700px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            animation: fadeIn 1s ease;
+            position: relative;
+            z-index: 100;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Avatar */
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #fff;
+            box-shadow: 0 0 15px rgba(255, 50, 150, 0.8);
+            margin: 0 auto 25px;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: 800;
+            color: #ff4e88;
+            text-shadow: 2px 2px 2px rgba(255, 50, 100, 0.4);
+        }
+
+        /* Căn đều đoạn văn */
+        p {
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.7;
+        }
+
+        /* ICON TRANG TRÍ */
+        .decorations {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        .decorations i {
+            font-size: 55px;
+            color: #ff7ab3;
+            animation: float 3.5s infinite ease-in-out;
+        }
+
+        .top-decor i { animation-duration: 3s; }
+        .mid-decor i { animation-duration: 3.5s; }
+        .bottom-decor i { animation-duration: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+
+        /* Nút phát nhạc */
+        #music-btn {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            width: 75px;
+            height: 75px;
+            background: #ff4e88;
+            color: white;
+            border-radius: 50%;
+            font-size: 32px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0px 8px 20px rgba(255, 0, 100, 0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: pulse 1.5s infinite;
+            z-index: 200;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+        /* 🌸 HIỆU ỨNG HOA RƠI */
+        .flower {
+            position: fixed;
+            top: -50px;
+            font-size: 25px;
+            color: rgba(255, 182, 193, 0.9);
+            animation: fall linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(120vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Nút phát nhạc -->
+    <button id="music-btn"><i class="fa-solid fa-music"></i></button>
+
+    <audio id="bg-music">
+        <source src="<iframe scrolling="no" width=640 height=180 src=https://zingmp3.vn/embed/song/Z6IE9EIZ?start=false frameborder="0" allowfullscreen="true"/>" type="audio/mp3">
+    </audio>
+
+    <div class="birthday-card">
+
+        <!-- Trang trí trên -->
+        <div class="decorations top-decor">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </div>
+
+        <!-- Avatar -->
+        <div class="avatar">
+            <img src="avatar.jpg" alt="avatar">
+        </div>
+
+        <h1>Dear Phanh.</h1>
+
+        <p>Mùa hè năm ấy, cái ngày mà Chí Khanh chậm chững bước vào nghề ca sĩ. Trong lúc mới debut chưa ai biết tới thì đã xuất hiện một người đặc biệt. Người ấy đã đi cùng, cổ vũ suốt thời gian vừa qua trên con đường sự nghiệp của tôi. Không ai khác chính là Tran Phuong Anh. Hôm nay, là ngày mà bà chính thức đặt dấu chân vào tuổi 19, cái độ tuổi lấy chồng. Thay mặt gia đình nội ngoại 2 bên tôi chúc bà gặt hái nhiều thành công trong tuổi mới, luôn vui vẻ, muốn gì được đấy, học giỏi, điểm cao như diều gặp gió, sớm tìm được một nửa còn lại của đời mình. Thôi thì chúc tất cả những gì tốt đẹp nhất đến bà.</p>
+
+        <!-- Trang trí giữa -->
+        <div class="decorations mid-decor">
+            <i class="fa-solid fa-cake-candles"></i>
+            <i class="fa-solid fa-gift"></i>
+            <i class="fa-solid fa-balloon"></i>
+            <i class="fa-solid fa-champagne-glasses"></i>
+        </div>
+
+        <p>Cảm động đừng khóc nhé ✨</p>
+
+        <!-- Trang trí dưới -->
+        <div class="decorations bottom-decor">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-bow"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+
+    </div>
+
+    <script>
+        const btn = document.getElementById("music-btn");
+        const music = document.getElementById("bg-music");
+
+        let playing = false;
+
+        btn.addEventListener("click", () => {
+            if (playing) {
+                music.pause();
+                btn.innerHTML = '<i class="fa-solid fa-music"></i>';
+            } else {
+                music.play();
+                btn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+            }
+            playing = !playing;
+        });
+
+        /* 🌸 HIỆU ỨNG HOA RƠI */
+        function createFlower() {
+            const flower = document.createElement("div");
+            flower.classList.add("flower");
+            flower.innerHTML = "🌸";
+
+            flower.style.left = Math.random() * 100 + "vw";
+            flower.style.fontSize = (20 + Math.random() * 20) + "px";
+            flower.style.animationDuration = (4 + Math.random() * 6) + "s";
+
+            document.body.appendChild(flower);
+
+            setTimeout(() => {
+                flower.remove();
+            }, 10000);
+        }
+
+        setInterval(createFlower, 300);
+    </script>
+
+</body>
+</html>
